@@ -19,6 +19,7 @@
           "options": {
             "outputPath": "dist/my-sales-app",
             "index": "src/index.html",
+            "baseHref": "/my-sales-app/",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
