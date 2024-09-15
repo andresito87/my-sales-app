@@ -24,15 +24,15 @@ interface MenuItem {
 export class MenuComponent {
   menuItems: Array<MenuItem> = [
     {
-      path: '',
+      path: '/',
       label: 'Inicio',
     },
     {
-      path: 'categories',
+      path: '/categories',
       label: 'Categorías',
     },
     {
-      path: 'suppliers',
+      path: '/suppliers',
       label: 'Proveedores',
     },
   ];
