@@ -105,6 +105,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/my-sales-app/",
+            "deployUrl": "/my-sales-app/",
             "repo": "https://github.com/andresito87/my-sales-app.git",
             "name": "andresito87",
             "email": "andrespodadera87@gmail.com"
