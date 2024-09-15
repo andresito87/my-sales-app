@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
-import { environment } from '../../environments/environment';
 
 interface MenuItem {
   /**
@@ -18,13 +17,11 @@ interface MenuItem {
   standalone: true,
   imports: [MatListModule],
   template: ` @for (item of menuItems; track item.path) {
-    <a [href]="baseHref + item.path">{{ item.label }}</a>
+    <a mat-list-item [href]="item.path">{{ item.label }}</a>
     }`,
   styles: ``,
 })
 export class MenuComponent {
-  baseHref: string = environment.baseHref;
-
   menuItems: Array<MenuItem> = [
     {
       path: '/',
