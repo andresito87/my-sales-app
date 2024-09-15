@@ -14,6 +14,7 @@ import { CategoryService } from './category.service';
 import { lastValueFrom } from 'rxjs';
 import { CategoryFormComponent } from './form/form.component';
 import { MatIconModule } from '@angular/material/icon';
+import { LoadingBarComponent } from '../loading-bar.component';
 
 @Component({
   selector: 'app-categories',
@@ -33,22 +34,24 @@ import { MatIconModule } from '@angular/material/icon';
     MatSortModule,
     CategoryFormComponent,
     MatIconModule,
+    LoadingBarComponent,
   ],
 })
-export class CategoriesComponent implements AfterViewInit {
+export class CategoriesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatTable) table!: MatTable<CategoriesItem>;
   dataSource = new MatTableDataSource<Category>();
   showform: Boolean = false;
   category!: Category;
+  showLoading: Boolean = false;
 
   constructor(private categoryService: CategoryService) {}
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id', 'name', 'description', 'actions'];
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     this.loadCategories();
   }
 
@@ -78,17 +81,21 @@ export class CategoriesComponent implements AfterViewInit {
 
   async onDeleteCategoryClick(category: Category) {
     if (confirm(`Delete "${category.name}" with id ${category.id} ?`)) {
+      this.showLoading = true;
       await lastValueFrom(this.categoryService.delete(category.id));
+      this.showLoading = false;
       this.loadCategories();
     }
   }
 
   async loadCategories(): Promise<void> {
+    this.showLoading = true;
     const categories = await lastValueFrom(this.categoryService.getAll());
     this.dataSource = new MatTableDataSource(categories);
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
+    this.showLoading = false;
   }
 
   async onSave(category: Category): Promise<void> {
