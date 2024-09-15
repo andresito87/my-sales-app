@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
+## Deployed Application
+
+The application has a backend server running on Vercel deployed at [MySalesApp Backend](https://my-sales-app-fake-server-2g9fq24pb-andres-projects-3b531fe7.vercel.app/) and the frontend running on GitHub Pages deployed at [MySalesApp Frontend](https://andresito87.github.io/my-sales-app/).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
