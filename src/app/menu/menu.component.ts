@@ -17,22 +17,22 @@ interface MenuItem {
   standalone: true,
   imports: [MatListModule],
   template: ` @for (item of menuItems; track item.path) {
-    <a mat-list-item [href]="item.path">{{ item.label }}</a>
+    <a mat-list-item [href]="'/my-sales-app/' + item.path">{{ item.label }}</a>
     }`,
   styles: ``,
 })
 export class MenuComponent {
   menuItems: Array<MenuItem> = [
     {
-      path: '/',
+      path: '',
       label: 'Inicio',
     },
     {
-      path: '/categories',
+      path: 'categories',
       label: 'Categorías',
     },
     {
-      path: '/suppliers',
+      path: 'suppliers',
       label: 'Proveedores',
     },
   ];
