@@ -5,7 +5,7 @@ import { DasboardComponent } from './dasboard/dasboard.component';
 
 export const routes: Routes = [
   {
-    path: 'categories',
+    path: '/my-sales-app/categories',
     loadComponent: () =>
       import('./categories/categories.component').then(
         (c) => c.CategoriesComponent
