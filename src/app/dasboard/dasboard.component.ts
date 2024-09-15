@@ -15,7 +15,7 @@ import { MatCardModule } from '@angular/material/card';
     .grid-container {
       margin: 20px;
     }
-    
+
     .dashboard-card {
       position: absolute;
       top: 15px;
@@ -23,17 +23,17 @@ import { MatCardModule } from '@angular/material/card';
       right: 15px;
       bottom: 15px;
     }
-    
+
     .more-button {
       position: absolute;
       top: 5px;
       right: 10px;
     }
-    
+
     .dashboard-card-content {
       text-align: center;
     }
-    
+
   `,
   standalone: true,
   imports: [
@@ -42,8 +42,8 @@ import { MatCardModule } from '@angular/material/card';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
-  ]
+    MatCardModule,
+  ],
 })
 export class DasboardComponent {
   private breakpointObserver = inject(BreakpointObserver);
@@ -56,7 +56,7 @@ export class DasboardComponent {
           { title: 'Card 1', cols: 1, rows: 1 },
           { title: 'Card 2', cols: 1, rows: 1 },
           { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'Card 4', cols: 1, rows: 1 },
         ];
       }
 
@@ -64,7 +64,7 @@ export class DasboardComponent {
         { title: 'Card 1', cols: 2, rows: 1 },
         { title: 'Card 2', cols: 1, rows: 1 },
         { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Card 4', cols: 1, rows: 1 },
       ];
     })
   );

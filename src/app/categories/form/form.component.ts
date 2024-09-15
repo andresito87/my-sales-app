@@ -1,20 +1,12 @@
-import { O } from '@angular/cdk/keycodes';
 import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { Validators, FormBuilder, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
 import { Category } from '../category.dto';
+import { MaterialModule } from '../../material.module';
 
 @Component({
   selector: 'category-form',
   standalone: true,
-  imports: [
-    MatButtonModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatCardModule,
-  ],
+  imports: [MaterialModule],
   templateUrl: './form.component.html',
   styles: ``,
 })
