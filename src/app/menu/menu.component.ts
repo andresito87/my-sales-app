@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
+import { environment } from '../../environments/environment';
 
 interface MenuItem {
   /**
@@ -22,6 +23,8 @@ interface MenuItem {
   styles: ``,
 })
 export class MenuComponent {
+  baseHref: string = environment.baseHref;
+
   menuItems: Array<MenuItem> = [
     {
       path: '/',
