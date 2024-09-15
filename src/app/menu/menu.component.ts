@@ -18,7 +18,7 @@ interface MenuItem {
   standalone: true,
   imports: [MatListModule],
   template: ` @for (item of menuItems; track item.path) {
-    <a mat-list-item [href]="item.path">{{ item.label }}</a>
+    <a [href]="baseHref + item.path">{{ item.label }}</a>
     }`,
   styles: ``,
 })
