@@ -1,1 +1,19 @@
-<p>suppliers-list works!</p>
+<mat-card-subtitle>Listado de proveedores </mat-card-subtitle>
+@if (supplierObservable|async) {
+<div class="container wrap">
+  @for( supplier of suppliers; track supplier.id) {
+  <mat-card class="item">
+    <mat-card-content>
+      <mat-card-subtitle>{{ supplier.companyName }}</mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+  }
+</div>
+} @else {
+<loading-bar></loading-bar>
+}
+<mat-card-actions align="end">
+  <button mat-stroked-button [routerLink]="['/suppliers/new']">
+    Nuevo Proveedor
+  </button>
+</mat-card-actions>

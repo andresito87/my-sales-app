@@ -24,7 +24,11 @@ import { MaterialModule } from '../material.module';
     .full-width-table {
       width: 100%;
     }
-
+    .action-buttons {
+      display: flex;
+      justify-content: flex-start; /* Cambia esto según la alineación que desees */
+      align-items: center;
+    }
   `,
   standalone: true,
   imports: [MaterialModule, CategoryFormComponent, LoadingBarComponent],
