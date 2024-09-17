@@ -32,6 +32,7 @@ import { MatCardModule } from '@angular/material/card';
 
     .dashboard-card-content {
       text-align: center;
+      margin: 20px;
     }
 
   `,
