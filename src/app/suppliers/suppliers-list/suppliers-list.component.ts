@@ -1,3 +1,4 @@
+import { SupplierCardComponent } from './supplier-card/supplier-card.component';
 import { lastValueFrom, Observable } from 'rxjs';
 import { Supplier } from '../supplier.dto';
 import { SupplierService } from './../supplier.service';
@@ -10,7 +11,13 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-suppliers-list',
   standalone: true,
-  imports: [MaterialModule, LoadingBarComponent, AsyncPipe, RouterLink],
+  imports: [
+    SupplierCardComponent,
+    MaterialModule,
+    LoadingBarComponent,
+    AsyncPipe,
+    RouterLink,
+  ],
   templateUrl: './suppliers-list.component.html',
   styles: ``,
 })

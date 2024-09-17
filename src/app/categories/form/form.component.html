@@ -2,21 +2,21 @@
   <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()" novalidate>
     <div class="container">
       <mat-form-field class="item-30">
-        <input matInput placeholder="Name" formControlName="name" />
+        <input matInput placeholder="Nombre" formControlName="name" />
         @if (categoryForm.controls['name'].hasError('required')) {
-        <mat-error>Name is <strong>required</strong></mat-error>
+        <mat-error>Nombre es <strong>obligatorio</strong></mat-error>
         } @if (categoryForm.controls['name'].hasError('minlength')) {
-        <mat-error>Name is too short</mat-error>
+        <mat-error>Nombre es demasiado corto</mat-error>
         }
       </mat-form-field>
       <mat-form-field class="item-70">
         <input
           matInput
-          placeholder="Description"
+          placeholder="Descripcion"
           formControlName="description"
         />
         @if (categoryForm.controls['description'].hasError('required')) {
-        <mat-error>Description is <strong>required</strong></mat-error>
+        <mat-error>Descripción es <strong>obligatoria</strong></mat-error>
         }
       </mat-form-field>
     </div>

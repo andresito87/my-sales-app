@@ -58,7 +58,7 @@
       #paginator
       [length]="dataSource.data.length"
       [pageIndex]="0"
-      [pageSize]="10"
+      [pageSize]="5"
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page"
     >
@@ -67,11 +67,14 @@
   }
 
   <mat-card-actions>
+    @if(!showform){
     <button mat-stroked-button (click)="onNewCategoryClick()">
       Nueva Categoría
     </button>
+    } @if(showform){
     <button class="m-10" mat-stroked-button (click)="hideCategoryForm()">
       Volver
     </button>
+    }
   </mat-card-actions>
 </mat-card>

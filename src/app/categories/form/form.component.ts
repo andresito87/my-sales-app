@@ -1,5 +1,5 @@
 import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
-import { Validators, FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { Validators, FormBuilder } from '@angular/forms';
 import { Category } from '../category.dto';
 import { MaterialModule } from '../../material.module';
 

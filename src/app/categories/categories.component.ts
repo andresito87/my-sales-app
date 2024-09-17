@@ -1,19 +1,12 @@
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {
-  MatTableModule,
-  MatTable,
-  MatTableDataSource,
-} from '@angular/material/table';
-import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
-import { MatSortModule, MatSort } from '@angular/material/sort';
+import { MatTable, MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { CategoriesItem } from './categories-datasource';
 import { Category } from './category.dto';
 import { CategoryService } from './category.service';
 import { lastValueFrom } from 'rxjs';
 import { CategoryFormComponent } from './form/form.component';
-import { MatIconModule } from '@angular/material/icon';
 import { LoadingBarComponent } from '../loading-bar.component';
 import { MaterialModule } from '../material.module';
 
@@ -76,7 +69,11 @@ export class CategoriesComponent implements OnInit {
   }
 
   async onDeleteCategoryClick(category: Category) {
-    if (confirm(`Delete "${category.name}" with id ${category.id} ?`)) {
+    if (
+      confirm(
+        `¿ Estás seguro que deseas eliminar la categoría "${category.name}" con id ${category.id} ?`
+      )
+    ) {
       this.showLoading = true;
       await lastValueFrom(this.categoryService.delete(category.id));
       this.showLoading = false;
