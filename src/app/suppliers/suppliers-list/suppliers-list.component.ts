@@ -19,7 +19,11 @@ import { RouterLink } from '@angular/router';
     RouterLink,
   ],
   templateUrl: './suppliers-list.component.html',
-  styles: ``,
+  styles: `
+    mat-card-actions {
+      margin: 20px 0 0 0;
+    }
+  `,
 })
 export class SuppliersListComponent implements OnInit {
   suppliers!: Supplier[];
