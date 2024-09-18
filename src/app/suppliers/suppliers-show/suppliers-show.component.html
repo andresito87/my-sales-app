@@ -2,6 +2,7 @@
 <mat-card-content>
   <h3>{{ supplier.contactName }}</h3>
   <div>{{ supplier.companyName }}</div>
+  <div>{{ supplier.contactTitle }}</div>
   <br /><br />
   <div>
     <dl>
@@ -26,7 +27,7 @@
   </div>
 </mat-card-content>
 <mat-card-actions class="container">
-  <button mat-stroked-button [routerLink]="['/suppliers']">Back</button>
+  <button mat-stroked-button [routerLink]="['/suppliers']">Volver</button>
   <div class="width-full"></div>
   <button
     mat-stroked-button

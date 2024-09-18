@@ -2,8 +2,8 @@
   "categories": [
     {
       "id": 1,
-      "description": "Soft drinks coffees teas beers and ales",
-      "name": "Beverages"
+      "name": "Beverages",
+      "description": "Soft drinks coffees teas beers and ales"
     },
     {
       "id": 2,
@@ -827,7 +827,7 @@
       "address": {
         "street": "9-8 Sekimai Musashino-shi",
         "city": "Tokyo",
-        "region": "NULL",
+        "region": "",
         "postalCode": 100,
         "country": "Japan",
         "phone": "(03) 3555-5011"
@@ -855,7 +855,7 @@
       "address": {
         "street": "92 Setsuko Chuo-ku",
         "city": "Osaka",
-        "region": "NULL",
+        "region": "",
         "postalCode": 545,
         "country": "Japan",
         "phone": "(06) 431-7877"
@@ -883,7 +883,7 @@
       "address": {
         "street": "29 King's Way",
         "city": "Manchester",
-        "region": "NULL",
+        "region": "",
         "postalCode": "M14 GSD",
         "country": "UK",
         "phone": "(161) 555-4448"
@@ -897,7 +897,7 @@
       "address": {
         "street": "Kaloadagatan 13",
         "city": "Göteborg",
-        "region": "NULL",
+        "region": "",
         "postalCode": "S-345 67",
         "country": "Sweden",
         "phone": "031-987 65 43"
@@ -911,7 +911,7 @@
       "address": {
         "street": "Av. das Americanas 12.890",
         "city": "Sao Paulo",
-        "region": "NULL",
+        "region": "",
         "postalCode": 5442,
         "country": "Brazil",
         "phone": "(11) 555 4640"
@@ -925,7 +925,7 @@
       "address": {
         "street": "Tiergartenstraße 5",
         "city": "Berlin",
-        "region": "NULL",
+        "region": "",
         "postalCode": 10785,
         "country": "Germany",
         "phone": "(010) 9984510"
@@ -953,7 +953,7 @@
       "address": {
         "street": "Bogenallee 51",
         "city": "Frankfurt",
-        "region": "NULL",
+        "region": "",
         "postalCode": 60439,
         "country": "Germany",
         "phone": "(069) 992755"
@@ -967,7 +967,7 @@
       "address": {
         "street": "Frahmredder 112a",
         "city": "Cuxhaven",
-        "region": "NULL",
+        "region": "",
         "postalCode": 27478,
         "country": "Germany",
         "phone": "(04721) 8713"
@@ -981,7 +981,7 @@
       "address": {
         "street": "Viale Dante 75",
         "city": "Ravenna",
-        "region": "NULL",
+        "region": "",
         "postalCode": 48100,
         "country": "Italy",
         "phone": "(0544) 60323"
@@ -995,7 +995,7 @@
       "address": {
         "street": "Hatlevegen 5",
         "city": "Sandvika",
-        "region": "NULL",
+        "region": "",
         "postalCode": 1320,
         "country": "Norway",
         "phone": "(0)2-953010"
@@ -1009,7 +1009,7 @@
       "address": {
         "street": "49 Gilbert St.",
         "city": "London",
-        "region": "NULL",
+        "region": "",
         "postalCode": "EC1 4SD",
         "country": "UK",
         "phone": "(171) 555-2222"
@@ -1051,7 +1051,7 @@
       "address": {
         "street": "Brovallavägen 231",
         "city": "Stockholm",
-        "region": "NULL",
+        "region": "",
         "postalCode": "S-123 45",
         "country": "Sweden",
         "phone": "08-123 45 67"
@@ -1065,7 +1065,7 @@
       "address": {
         "street": "203 Rue des Francs-Bourgeois",
         "city": "Paris",
-        "region": "NULL",
+        "region": "",
         "postalCode": 75004,
         "country": "France",
         "phone": "(1) 03.83.00.68"
@@ -1093,7 +1093,7 @@
       "address": {
         "street": "471 Serangoon Loop Suite #402",
         "city": "Singapore",
-        "region": "NULL",
+        "region": "",
         "postalCode": 512,
         "country": "Singapore",
         "phone": "555-8787"
@@ -1107,7 +1107,7 @@
       "address": {
         "street": "Lyngbysild Fiskebakken 10",
         "city": "Lyngby",
-        "region": "NULL",
+        "region": "",
         "postalCode": 2800,
         "country": "Denmark",
         "phone": 43844108
@@ -1121,7 +1121,7 @@
       "address": {
         "street": "Verkoop Rijnweg 22",
         "city": "Zaandam",
-        "region": "NULL",
+        "region": "",
         "postalCode": "9999 ZZ",
         "country": "Netherlands",
         "phone": "(12345) 1212"
@@ -1149,7 +1149,7 @@
       "address": {
         "street": "22 rue H. Voiron",
         "city": "Montceau",
-        "region": "NULL",
+        "region": "",
         "postalCode": 71300,
         "country": "France",
         "phone": "85.57.00.07"
@@ -1163,7 +1163,7 @@
       "address": {
         "street": "Via dei Gelsomini 153",
         "city": "Salerno",
-        "region": "NULL",
+        "region": "",
         "postalCode": 84100,
         "country": "Italy",
         "phone": "(089) 6547665"
@@ -1177,7 +1177,7 @@
       "address": {
         "street": "Bat. B 3 rue des Alpes",
         "city": "Annecy",
-        "region": "NULL",
+        "region": "",
         "postalCode": 74000,
         "country": "France",
         "phone": "38.76.98.06"
@@ -1191,7 +1191,7 @@
       "address": {
         "street": "Valtakatu 12",
         "city": "Lappeenranta",
-        "region": "NULL",
+        "region": "",
         "postalCode": 53120,
         "country": "Finland",
         "phone": "(953) 10956"
