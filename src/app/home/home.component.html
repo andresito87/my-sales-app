@@ -25,6 +25,13 @@
       </button>
       }
       <span>Ventas App</span>
+      <!--CART BUTTON-->
+      <div class="width-full"></div>
+      <button mat-icon-button>
+        <mat-icon [matBadge]="cartService.itemsInCart" matBadgeColor="warn">
+          shopping_cart</mat-icon
+        >
+      </button>
     </mat-toolbar>
     <!-- Add Content Here -->
     <div class="m-10">
