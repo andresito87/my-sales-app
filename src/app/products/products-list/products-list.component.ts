@@ -1,3 +1,4 @@
+import { ProductCardComponent } from './../product-card/product-card.component';
 import { CartService } from './../../cart.service';
 import { Component, inject, OnInit } from '@angular/core';
 import { MaterialModule } from '../../material.module';
@@ -12,7 +13,13 @@ import { CartItem } from '../../cart.dto';
 @Component({
   selector: 'app-products-list',
   standalone: true,
-  imports: [MaterialModule, AsyncPipe, LoadingBarComponent, CurrencyPipe],
+  imports: [
+    MaterialModule,
+    ProductCardComponent,
+    AsyncPipe,
+    LoadingBarComponent,
+    CurrencyPipe,
+  ],
   templateUrl: './products-list.component.html',
   styles: ``,
 })
