@@ -1,3 +1,3 @@
 export const environment = {
-  api: 'http://example.com:5661/api/',
+  api: 'https://my-sales-app-fake-server-2g9fq24pb-andres-projects-3b531fe7.vercel.app/',
 };
